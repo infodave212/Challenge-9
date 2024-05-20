@@ -1,8 +1,9 @@
 // TODO: Include packages needed for this application
-
+const fs=require('fs') 
+const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
-const inquirer = require('inquier')
-const questions =inquire.promt([
+const inquirer = require('inquirer')
+const questions =inquirer.prompt([
     
 {
     type: 'input',
@@ -17,7 +18,7 @@ const questions =inquire.promt([
 },{
     type: 'input',
     message: 'what is your github username',
-    name: 'github-username',
+    name: 'githubUsername',
 
 },
 {
@@ -40,30 +41,54 @@ const questions =inquire.promt([
 },{
     type: 'usage information',
     message: 'what is the usage information?',
-    name: 'usage-information',
+    name: 'usageInformation',
 },{
     type: 'contribution guidelines',
     message: 'do you have the contribution guidelines?',
-    name: 'contribution-guidelines',
+    name: 'contributionGuidelines',
 
 },{
     type: 'test instructions',
     message: 'are the test instructions up to date?',
-    name: 'test-instructions',
+    name: 'testInstructions',
 }
 
 ])
 .then((answers) =>{
  if(answers){
-    return `project title ${answers.title}
-    ${ansers.description} ${answers.installations}
-    ${answers.instructions} ${answers.usage-information} 
-    ${answers.contribution-guidelines} ${answers.test-instructions}
-    ${answers.email} ${answers.license},
-    ${answers.github-username}`}
+    return `# ${answers.title}
+    * [description] (#description)
+    * [installation] (#installation)
+    * [testInstruction] (#testInstruction)
+    * [contributionGuidelines] (#contributionGuidelines)
+    * [usageinformation] (#usageInformation)
+    * [userInformation] (#userInformation)
+    * [emails] (#emails)
+    * [license] (#license)
+    * [githubUsername] (#githubUsername)
+## description
+    ${answers.description}
+## installation
+    ${answers.installations}
+## instructions
+    ${answers.instructions}
+## userInformation
+    ${answers.usageInformation} 
+## contributionGuidelines
+    ${answers.contributionGuidelines}
+## testInformations
+    ${answers.testInstructions}
+## emails
+    ${answers.email} 
+## license
+    ${answers.license}
+## githubUsername
+    ${answers.githubUsername}`}
  })
  .then((readMe) => {
-    fs.writeToFile('readMe.md',readMe)
+    fs.writeFile('readMe.md',readMe,err=>{
+        console.log('success!')
+    })
  }
 
 
