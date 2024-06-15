@@ -1,28 +1,25 @@
-# project
-    * [description] (#description)
-    * [installation] (#installation)
-    * [testInstruction] (#testInstruction)
-    * [contributionGuidelines] (#contributionGuidelines)
-    * [usageinformation] (#usageInformation)
-    * [userInformation] (#userInformation)
-    * [emails] (#emails)
-    * [license] (#license)
-    * [githubUsername] (#githubUsername)
+# Musical
+* [description](#description)
+* [installation](#installation)
+* [testinstruction](#testinstruction)
+* [contributionguidelines](#contributionguidelines)
+* [userinformation](#userinformation)
+* [emails](#emails)
+* [license](#license)
+* [githubusername](#githubusername)
 ## description
-    articles
+  scientific findings
 ## installation
-    undefined
-## instructions
-    yes
-## userInformation
-    artcles on research 
+  modem
+## userinformation
+  Yes 
 ## contributionGuidelines
-    yes
-## testInformations
-    yes
+  Yes
+## testinstruction
+  No
 ## emails
-    infodave212@gmail.com 
+  infodave212@gmail.com 
 ## license
-    RN
+  RN
 ## githubUsername
-    infodave212@gmail.com
+  infodave212@gmail.com

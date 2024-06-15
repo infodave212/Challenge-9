@@ -3,6 +3,7 @@ const fs=require('fs')
 const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const inquirer = require('inquirer')
+
 const questions =inquirer.prompt([
     
 {
@@ -54,39 +55,9 @@ const questions =inquirer.prompt([
 }
 
 ])
-.then((answers) =>{
- if(answers){
-    return `# ${answers.title}
-    * [description] (#description)
-    * [installation] (#installation)
-    * [testInstruction] (#testInstruction)
-    * [contributionGuidelines] (#contributionGuidelines)
-    * [usageinformation] (#usageInformation)
-    * [userInformation] (#userInformation)
-    * [emails] (#emails)
-    * [license] (#license)
-    * [githubUsername] (#githubUsername)
-## description
-    ${answers.description}
-## installation
-    ${answers.installations}
-## instructions
-    ${answers.instructions}
-## userInformation
-    ${answers.usageInformation} 
-## contributionGuidelines
-    ${answers.contributionGuidelines}
-## testInformations
-    ${answers.testInstructions}
-## emails
-    ${answers.email} 
-## license
-    ${answers.license}
-## githubUsername
-    ${answers.githubUsername}`}
- })
+
  .then((readMe) => {
-    fs.writeFile('readMe.md',readMe,err=>{
+    fs.writeFile('readMe.md', generateMarkdown(readMe),err=>{
         console.log('success!')
     })
  }
