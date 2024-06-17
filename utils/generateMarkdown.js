@@ -17,11 +17,11 @@ function generateMarkdown(answers) {
 * [installation](#installation)
 * [testinstruction](#testinstruction)
 * [contributionguidelines](#contributionguidelines)
-* [usageinformation](#usageInformation)
+* [usageinformation](#usageinformation)
 * [userinformation](#userinformation)
 * [emails](#emails)
 * [license](#license)
-* [githubUsername](#githubUsername)
+* [githubusername](#githubusername)
 ## description
   ${answers.description}
 ## installation

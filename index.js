@@ -42,7 +42,7 @@ const questions =inquirer.prompt([
 },{
     type: 'usage information',
     message: 'what is the usage information?',
-    name: 'usageInformation',
+    name: 'usageinformation',
 },{
     type: 'contribution guidelines',
     message: 'do you have the contribution guidelines?',

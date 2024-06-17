@@ -1,25 +1,28 @@
-# Musical
+# Project Mosaic
 * [description](#description)
 * [installation](#installation)
 * [testinstruction](#testinstruction)
 * [contributionguidelines](#contributionguidelines)
+* [usageinformation](#usageinformation)
 * [userinformation](#userinformation)
 * [emails](#emails)
 * [license](#license)
 * [githubusername](#githubusername)
 ## description
-  scientific findings
+  Data analytics
 ## installation
-  modem
-## userinformation
-  Yes 
+  micro chips
+## instructions
+  Yes
+## userInformation
+  sql database 
 ## contributionGuidelines
   Yes
-## testinstruction
-  No
+## testInstruction
+  Yes
 ## emails
-  infodave212@gmail.com 
+  davemega212@gmail.com 
 ## license
-  RN
+  certified business analyst
 ## githubUsername
   infodave212@gmail.com
